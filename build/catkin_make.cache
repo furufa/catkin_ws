@@ -1,0 +1,2 @@
+rosaria
+-DCATKIN_DEVEL_PREFIX=/home/furuhata/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/furuhata/catkin_ws/install -G Unix Makefiles

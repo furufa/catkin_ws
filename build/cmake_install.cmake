@@ -119,6 +119,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/furuhata/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/furuhata/catkin_ws/build/gamepad_operation/cmake_install.cmake")
   include("/home/furuhata/catkin_ws/build/rosaria/cmake_install.cmake")
+  include("/home/furuhata/catkin_ws/build/learning_joy/cmake_install.cmake")
 
 endif()
 

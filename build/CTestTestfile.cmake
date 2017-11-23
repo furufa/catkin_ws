@@ -7,3 +7,4 @@
 subdirs(gtest)
 subdirs(gamepad_operation)
 subdirs(rosaria)
+subdirs(learning_joy)

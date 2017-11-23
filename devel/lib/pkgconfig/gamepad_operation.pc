@@ -1,0 +1,8 @@
+prefix=/home/furuhata/catkin_ws/devel
+
+Name: gamepad_operation
+Description: Description of gamepad_operation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/furuhata/catkin_ws/devel/lib 
+Requires: 

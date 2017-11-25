@@ -3,13 +3,13 @@
 #include <sensor_msgs/Joy.h>
 
 
-class TeleopTurtle
+class TeleopTurtle  
 {
     public:
         TeleopTurtle();
 
     private:
-        void joyCallback(const sensor_msgs::Joy::ConstPtr& joy);
+        void joyCallback(const sensor_msgs::Joy::ConstPtr& joy);  //joyメッセージを取るための関数
 
         ros::NodeHandle nh_;
 
@@ -21,12 +21,12 @@ class TeleopTurtle
 };
 
 
-TeleopTurtle::TeleopTurtle():
-    linear_(1),
-    angular_(2)
+TeleopTurtle::TeleopTurtle():     //コンストラクタ
+    linear_(1),                   //こういう書き方初期化もあるらしい
+    angular_(2)                   // どのボタンで亀を操作するか
 {
-
-    nh_.param("axis_linear", linear_, linear_);
+    // 以下のパラメータで亀の速度とジョイスティックの入力数値との比率を変更
+    nh_.param("axis_linear", linear_, linear_);     
     nh_.param("axis_angular", angular_, angular_);
     nh_.param("scale_angular", a_scale_, a_scale_);
     nh_.param("scale_linear", l_scale_, l_scale_);
